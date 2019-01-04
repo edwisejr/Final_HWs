@@ -1,0 +1,168 @@
+.hero {
+    position: relative;
+    height: 550px;
+    /* padding: 20px; */
+    margin: 0;
+    background: black;
+    background-image: url("../images/fractal-1280081_1920.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+  .panel {
+    margin-bottom: 21px;
+    background-color: #dcdfe2;
+    border: 1px solid transparent;
+    border-radius: 0;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+    margin-top: 2px;
+    font-size: 0.1rem;
+    animation: title 1.2s forwards linear;
+  }
+  
+  .hero p {
+    font-size: 2rem;
+    opacity: 0;
+    animation: subtitle 1.2s forwards linear;
+    animation-delay: 1.2s;
+  }
+
+#form{
+    background-color: #dcdfe2;
+}
+  .card {
+    position: left;
+    /* height: 550px; */
+    /* padding: 20px; */
+    margin: 0;
+    background: black;
+    background-image: url("../images/fractal-1280081_1920.jpg");
+    /* background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover; */
+  }
+
+  .nav-ufo {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    color: white;
+  }
+
+  .ufo-form {
+    margin-top: 50px;
+  }
+  
+  .filters .panel-body {
+    padding: 0;
+  }
+  
+  .filters {
+    margin-top: 10px;
+  }
+
+  .wrapper {
+    /* position: relative; */
+    min-height: 10%;
+    padding-bottom: 10px;
+    overflow: auto;
+  }
+
+  
+/* media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+    #table-area td {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #table-area thead {
+      display: none;
+    }
+  
+    .table-head{
+background: #dcdfe2
+
+    }
+
+    #table-area tr td:first-child {
+      font-size: 1.8em;
+      font-weight: bold;
+      background: #dcdfe2;
+    }
+  
+    #table-area tr td:last-child {
+      margin-bottom: 20px;
+      background: #dcdfe2;
+    }
+  
+    #table-area tr td:last-child::after {
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-top: 20px;
+      content: " ";
+      background: aliceblue;
+    }
+  
+    #table-area td {
+      font-size: 1.25em;
+      background-color: #dcdfe2
+    }
+  
+    #table-area tbody td {
+      display: block;
+      text-align: center;
+    }
+  
+    #table-area tbody td::before {
+      display: block;
+      font-size: 1.4em;
+      font-weight: bold;
+      text-align: center;
+      content: attr(data-th);
+    }
+  
+    .hero h1 {
+      animation: smaller-title 1.2s forwards linear;
+    }
+  }
+  
+   @keyframes title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font-size: 7.5rem;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes smaller-title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font-size: 5.5rem;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes subtitle {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
